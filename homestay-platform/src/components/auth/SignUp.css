@@ -1,0 +1,123 @@
+/* Overall page layout */
+
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
+.signup-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #f9f4e9 75%, #5c4033 25%);
+    position: relative;
+    font-family: 'Alkalami', sans-serif;    
+}
+
+.text-box {
+    width: 60%; /* Adjusting to leave space for the card */
+    padding-left: 5rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+.text-box:hover {
+    color: #6f6059; /* Change this to your desired hover color */
+}
+
+.text-box h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.text-box p {
+    font-size: 1.25rem;
+    line-height: 1.75;
+}
+
+.signup-card-wrapper {
+    position: absolute;
+    right: 12.4%;  /* Centering the card on the border between the light and dark box */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.signup-card {
+    width: 350px;
+    border-radius: 20px;
+    background-color: #b7a2a2;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding-top: 50px;  /* To account for the profile image floating above the card */
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid rgb(104, 7, 7);
+}
+
+.signup-card .form-control {
+    border-radius: 20px;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    background-color: #60313189;
+    border: none;
+}
+
+/* Customize the form inputs */
+.input-field {
+    border-radius: 30px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease-in-out; /* For smooth transitions */
+}
+
+/* Change border color and background on focus and hover */
+.input-field:hover,
+.input-field:focus {
+    border-color: #764ba2; /* Change border color on hover/focus */
+    box-shadow: 0 0 5px rgba(118, 75, 162, 0.5); /* Add shadow on hover/focus */
+    outline: none; /* Remove default outline */
+    background-color: rgba(118, 75, 162, 0.1); /* Light background on hover/focus */
+}
+
+.signup-card:hover {
+    transform: scale(1.02); /* Scale up the card slightly */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+.role-dropdown {
+    border-radius: 20px;
+    background-color: #60313189;
+    color: #333;
+}
+
+.role-dropdown:hover {
+    background-color: #38050547; /* Custom hover color */
+}
+
+.role-dropdown:focus {
+    background-color: #a27a7a3e; /* Keep the same color when focused */
+    outline: none; /* Remove the default outline */
+    box-shadow: none; /* Remove default blue shadow */
+    border: 2px solid #5c4033; /* Add a custom border if needed */
+}
+.btn-custom {
+    width: 100%;
+    background-color: #5c4033;
+    color: white;
+    border-radius: 20px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.btn-custom:hover {
+    transform: scale(1.02); /* Scale up the card slightly */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+    background-color: #4e352b;
+}

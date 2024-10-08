@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+.homepage-wrapper {
+    background-image: url('1.jpg'); /* Add your background image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+/* Navbar header styles */
+.navbar-header {
+    width: 100%;
+    background-color: #3b2a2a; /* Dark brown background */
+    padding: 15px 0; /* Padding for the navbar */
+    text-align: center; /* Center text */
+    position: fixed; /* Make the navbar fixed at the top */
+    top: 0; /* Align it to the top of the page */
+    left: 0; /* Align it to the left of the page */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+/* Title styles in the navbar */
+.navbar-title {
+    color: #ffffff; /* White text color */
+    font-size: 4rem; /* Size of the title */
+    margin: 0; /* Remove default margin */
+    font-family: 'Instrument Serif', serif; /* Use Instrument Serif font */
+}
+
+.navbar-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Card styles */
+.homepage-card {
+    background-color: #d9d9d977; /* Increased transparency */
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    padding: 2rem;
+    color: #ffffff;
+    margin-top: 150px;
+    margin-right: 100px;
+    margin-bottom: 20px; /* Adjust this value to separate the card from the navbar */
+
+    /* Set position to absolute and adjust left property */
+    position: absolute; /* Position the card absolutely */
+    left: 900px; /* Adjust this value to move the card left */
+    top: 50px; /* Keep this to maintain vertical space from the navbar */
+    
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center the content horizontally */
+}
+
+.card-text {
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    line-height: 1.5; /* Improve readability */
+    color: #341818; /* Set text color to white */
+    margin-top: 1.5rem; /* Margin above the text */
+    text-align: center; /* Center the text */
+    font-family: 'Jost', serif;
+    padding: 0 1rem; /* Add horizontal padding */
+}
+
+/* Title inside the card */
+.homepage-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-family: 'Jost', serif;
+    color: #341818;
+    
+}
+
+/* Button styles for the homepage */
+.homepage-button {
+    width: 200px; /* Set a fixed width for the button */
+    padding: 10px; /* Padding inside the button */
+    font-size: 1.1rem; /* Font size of the button text */
+    background-color: rgb(68, 40, 8); /* Button background color */
+    border: none; /* Remove border */
+    border-radius: 20px; /* Slight rounding */
+    color: rgb(230, 222, 222); /* Button text color */
+    display: block; /* Makes the button a block element */
+    margin: 20px auto; /* Center the button horizontally */
+}
+
+.homepage-button:hover {
+    background-color: rgba(108, 67, 67, 0.652);
+}

@@ -1,0 +1,132 @@
+/* Apply a gradient background to the login wrapper */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
+
+
+.login-wrapper {
+    background: linear-gradient(135deg, #522f2f 0%, #cfbcab 100%); /* Brown gradient */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stack header and main content */
+    justify-content: center; /* Center items vertically */
+    align-items: center;
+    padding: 0px;
+}
+
+/* Navbar header styles */
+.navbar-header {
+    width: 100%;
+    background-color: #3b2a2a; /* Dark brown background */
+    padding: 15px 0; /* Padding for the navbar */
+    text-align: center; /* Center text */
+    position: fixed; /* Make the navbar fixed at the top */
+    top: 0; /* Align it to the top of the page */
+    left: 0; /* Align it to the left of the page */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.navbar-title {
+    color: #ffffff; /* White text color */
+    font-size: 4rem; /* Size of the title */
+    margin: 0; /* Remove default margin */
+    font-family: 'Instrument Serif', serif; /* Use Instrument Serif font */
+}
+
+/* Centering the login card with margin */
+.login-card {
+    background-color: rgba(72, 7, 7, 0.95);
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.5); /* Deeper shadow for modern look */
+    border-radius: 50px; /* Fully rounded corners */
+    overflow: hidden;
+    padding: 2.5rem; /* Spacious padding */
+    color: #ffffff; /* White text */
+    position: relative; /* For glow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 80px; /* Add space between navbar and sign-in card */
+}
+
+/* Subtle scaling effect on hover */
+.login-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 15px 50px rgba(144, 116, 116, 0.3);
+}
+
+/* Apply a gradient background with reduced opacity */
+.login-card {
+    background: linear-gradient(135deg, rgba(30, 30, 40, 0.85) 0%, rgba(58, 58, 69, 0.85) 100%);
+    border: 1px solid rgba(77, 65, 65, 0.7);
+}
+
+/* Glow effect with further reduced opacity */
+.login-card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: radial-gradient(circle, rgb(172, 107, 107) 0%, rgba(149, 103, 103, 0) 80%);
+    opacity: 0.05;
+    pointer-events: none;
+}
+
+/* Styling for "Sign in" title */
+.login-card .signin-title {
+    color: #ffffff;
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Customize the form inputs */
+.input-field {
+    border-radius: 30px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Change border color and background color on hover for input fields */
+.input-field:hover {
+    border-color: #a24b4b; /* Change border color */
+    background-color: rgba(191, 152, 152, 0.2); /* Optional: Change background color */
+}
+
+/* Apply specific hover effect for username input field */
+.input-field[name="username"]:hover {
+    border-color: #a24b4b; /* Change border color specifically for username */
+    background-color: rgba(191, 152, 152, 0.3); /* Change background color specifically for username */
+}
+
+.signin-title{
+    font-family: 'Alkalami', sans-serif; 
+    font-weight: 2;
+}
+
+.input-field:focus {
+    border-color: #a24b4b;
+    box-shadow: 0 0 5px rgba(191, 152, 152, 0.5);
+    outline: none;
+}
+
+/* Customize the login button */
+.custom-button {
+    background-color: #431313;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+}
+
+.custom-button:hover {
+    background-color: #bc999963;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .login-card {
+        padding: 2rem;
+    }
+}
